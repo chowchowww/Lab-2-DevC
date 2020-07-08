@@ -36,18 +36,21 @@ function Item({ item }) {
                     size={27}
                     color='black'
                     onPress={() => alert("Liked")}
+                    style={styles.iconStyle}
                 />
                 <Feather
                     name='message-square'
                     size={27}
                     color='black'
                     onPress={() => alert("Messaged")}
+                    style={styles.iconStyle}
                 />
                 <Feather
                     name='share'
                     size={27}
                     color='black'
                     onPress={() => alert("Shared")}
+                    style={styles.iconStyle}
                 />
             </View>
             <Text style={styles.likeCount}>
@@ -72,7 +75,7 @@ const styles = StyleSheet.create({
     },
     posterName: {
         marginLeft: 12,
-        fontSize: 15,
+        fontSize: 16,
         fontWeight: '500'
     },
     imageWrapper: {
@@ -86,14 +89,19 @@ const styles = StyleSheet.create({
     bottomWrapper: {
         flex: 1,
         flexDirection: 'row',
-        marginVertical: 10,
+        marginTop: 5,
         marginHorizontal: 5
     },
     likeCount: {
-        flex: 1,
         fontSize: 18,
         flexDirection: 'row',
-        marginHorizontal: 10
+        marginHorizontal: 10,
+        marginBottom: 5
+    },
+    iconStyle: {
+        flexDirection: 'row',
+        marginVertical: 5,
+        marginHorizontal: 5
     }
 });
 
